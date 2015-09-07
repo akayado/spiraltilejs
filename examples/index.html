@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="../js/jQuery.spiraltile.min.js"></script>
+		<script>
+			$(function(){
+				$(".tiles-1").spiralTile({width: 600, height: 400});
+				$(".tiles-2").spiralTile({mode: "layer", ratio: "silver", width: 600, orientation: "portrait", clockwise: false, beginning: "bottom"});
+			});
+		</script>
+		<style>
+			.border {
+				border: solid 1px #000;
+			}
+			.margin {
+				margin: 5px;
+			}
+			.bigmargin {
+				margin: 10px;
+			}
+			.padding {
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="tiles-1">
+			<li class="border margin">A</li>
+			<li class="border margin padding">B</li>
+			<li class="border bigmargin">C</li>
+			<li class="border margin padding">D</li>
+			<li class="border margin padding">E</li>
+			<li class="border bigmargin padding">F</li>
+			<li class="border margin padding">G</li>
+		</ul>
+
+		<ul class="tiles-2">
+			<li class="border margin">A</li>
+			<li class="border margin padding">B</li>
+			<li class="border bigmargin">C</li>
+			<li class="border margin padding">D</li>
+			<li class="border margin padding">E</li>
+			<li class="border bigmargin padding">F</li>
+			<li class="border margin padding">G</li>
+		</ul>
+	</body>
+</html>
