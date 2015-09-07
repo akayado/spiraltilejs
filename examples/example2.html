@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="../js/jQuery.spiraltile.min.js"></script>
+		<script>
+			$(function(){
+				$("#tiles").spiralTile({width: 400, ratio: 1.4, orientation: "portrait", beginning: "bottom"});
+			});
+		</script>
+		<style>
+			li {
+				list-style: none;
+			}
+			li.i1 {
+				background: rgb(100,0,0);
+			}
+			li.i2 {
+				background: rgb(160,0,0);
+				margin: 5px;
+			}
+			li.i3 {
+				background: rgb(220,0,0);
+				margin: 10px;
+			}
+			li.i4 {
+				background: rgb(255,30,0);
+				margin: 15px;
+			}
+			li.i5 {
+				background: rgb(255,90,0);
+				margin: 15px;
+			}
+			li.i6 {
+				background: rgb(255,150,0);
+				margin: 10px;
+			}
+			li.i7 {
+				background: rgb(255,210,0);
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="tiles">
+			<li class="i1">A</li>
+			<li class="i2">B</li>
+			<li class="i3">C</li>
+			<li class="i4">D</li>
+			<li class="i5">E</li>
+			<li class="i6">F</li>
+			<li class="i7">G</li>
+		</ul>
+	</body>
+</html>
