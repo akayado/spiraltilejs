@@ -28,6 +28,12 @@ That's it! You will get a nice spiral.
 
 Here are all the currently available options.
 
+## Margin and padding support
+The elements in the spiral can have margins and paddings.
+SpiralTile.js tiles the elements following the stylesheets.
+See the example below(a screenshot of [examples/index.html](https://github.com/akayado/spiraltilejs/blob/master/examples/index.html)).
+!["examples/index.html"](https://github.com/akayado/spiraltilejs/blob/master/example.png)
+
 ## Options
 
 * width : a number or "auto"
